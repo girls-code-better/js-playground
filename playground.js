@@ -13,12 +13,14 @@ var app = new Vue({
         run: function () {
             try {
                 this.output = eval(myCodeMirror.getValue())
+                confetti.start();
             } catch (e) {
                 console.error(e);
                 this.error = e;
             }
         },
         removeError: function () {
+            confetti.stop();
             this.error = null;
             this.output = null;
         }
