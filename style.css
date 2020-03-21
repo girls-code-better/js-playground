@@ -1,0 +1,26 @@
+.CodeMirror {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    margin: 7px;
+}
+.notification {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+     margin: 7px;
+}
+.run {
+  background-color :transparent;
+  color: white;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 10%;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}

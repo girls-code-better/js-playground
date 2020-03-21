@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.52.2/lib/codemirror.min.css">
+    <link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" rel="stylesheet" />
+    <title>JS PlayGround - girls code better</title>
+</head>
+<body>
+    <div id="app" @keypress="removeError">
+        <textarea id="code-editor"></textarea>
+        <div class="container">
+            <div v-if="error" class="notification is-danger">
+                <button class="delete"></button> {{error}}
+            </div>
+            <div v-if="output" class="notification is-primary">
+                <button class="delete"></button> {{output}}
+            </div>
+        </div>
+        <div id="mybutton">
+            <button @click="run" class="run"><img src="https://img.icons8.com/flat_round/64/000000/play--v1.png"/></button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <center>&copy; Girls Code Better 2020</center>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js" integrity="sha256-id5Qk/MwQJxgNlDFDpVymUuReXfTUZiaQKb8arrddQM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="playground.js"></script>
+</html>
